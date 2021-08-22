@@ -1,0 +1,83 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+header {
+  display: flex;
+  margin: auto;
+  padding: 0 2rem;
+  max-width: 1440px;
+  justify-content: space-between;
+}
+.headerimg {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+nav {
+  display: block;
+  padding: 1rem 0;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav a {
+  margin-left: 2rem;
+  color: black;
+  padding-top: 2rem;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #0065FC;
+  border-top: 3px solid #0065FC;
+}
+#inscription a {
+    font-weight: bold;
+    color: #0065FC;
+}
+section {
+    margin: auto;
+    padding: 0 2rem;
+    max-width: 1440px;
+}
+#search_part {
+  padding-bottom: 2rem;
+}
+#search_part h1{
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+#search_part p{
+  margin-top: 0;
+  font-size: 0.9rem;
+}
+form{
+  display: inline-flex;
+}
+#marker {
+  background-color: #F2F2F2;
+  border: 1px #F2F2F2 solid;
+  border-radius: 1rem 0 0 1rem;
+  text-align: center;
+  padding: 0.6rem 1rem 0.6rem 1rem;
+}
+input {
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+  border-left: none;
+  border-right: none;
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  font-weight: bold;
+}
+#backgroundtext {
+  font-style: black;
+}
+button {
+  border: 1px #0065FC solid;
+  border-radius: 0 1rem 1rem 0;
+  text-align: center;
+  background-color:#0065FC;
+  color: white;
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  cursor: pointer;
+}

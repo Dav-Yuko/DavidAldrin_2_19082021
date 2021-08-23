@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" href="https://fonts.googleapis.com/css?family=Raleway" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <script src="https://kit.fontawesome.com/d3c7b83d91.js" crossorigin="anonymous"></script>
     <title>reservia</title>
 </head>
@@ -29,45 +30,41 @@
                 <span id="marker">
                     <i class="fas fa-map-marker-alt"></i>
                 </span>
-                <input type="search" placeholder="Marseille, France" />
+                <input type="search" value="Marseille, France" />
                 <button>
                     <span class="search_button">Rechercher</span>
                 </button>
             </form>
         </div>
-        <div id="filters">
-            <span class="filters_title">Filtres</span>
-            <div class="filters_options">
-                <input name="type-hebergement" id="economique" type="checkbox" value="economique">
-                <label for="economique" class="filter-option">
-                    <span class="filter-option__icon">
-                        <i class="fas fa-money-bill-wave"></i>
-                    </span>
-                    <span class="filter-option_label">Économique</span>
-                </label>
-                <input name="type-hebergement" id="familial" type="checkbox" value="familial">
-                <label for="familial" class="filter-option">
-                    <span class="filter-option_icon">
-                        <i class="fas fa-child"></i>
-                    </span>
-                    <span class="filter-option__label">Familial</span>
-                </label>
-                <input name="type-hebergement" id="romantique" type="checkbox" value="romantique">
-                <label for="romantique" class="filter-option">
-                    <span class="filter-option__icon">
-                        <i class="fas fa-heart"></i>
-                    </span>
-                    <span class="filter-option__label">Romantique</span>
-                </label>
-                <input name="type-hebergement" id="animaux-autorises" type="checkbox" value="animaux-autorises">
-                <label for="animaux-autorises" class="filter-option">
-                    <span class="filter-option__icon">
-                        <i class="fas fa-dog"></i>
-                    </span>
-                    <span class="filter-option__label">Animaux autorisés</span>
-                </label>
+        <div class="filters">
+            <h2>Filtres</h2>
+            <div class="filters_types">
+                <div>
+                    <i class="fas fa-money-bill-wave"></i>
+                    <input type="checkbox" name="type-hebergement" id="economic" value="economic">
+                    <label for="economic" class="filter_title">Économique</label>
+                </div>
+                <div>
+                    <i class="fas fa-child"></i>
+                    <input type="checkbox" name="type-hebergement" id="familial" value="familial">
+                    <label for="familial" class="filter_title">Familial</label>
+                </div>
+                <div>
+                    <i class="fas fa-heart"></i>
+                    <input type="checkbox" name="type-hebergement" id="romantique" value="romantique">
+                    <label for="romantique" class="filter_title">Romantique</label>
+                </div>
+                <div>
+                    <i class="fas fa-dog"></i>
+                    <input type="checkbox" name="type-hebergement" id="pet" value="pet">
+                    <label for="pet" class="filter_title">Animaux autorisés</label>
+                </div>
             </div>
         </div>
+        <p class="info">
+            <span class="info_icon"><i class="fas fa-info"></i></span>
+            Plus de 500 logements sont disponibles dans cette ville
+        </p>
     </section>
     <section>
         <article>

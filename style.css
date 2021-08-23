@@ -38,7 +38,6 @@ nav a:hover {
 section {
     margin: auto;
     padding: 0 2rem;
-    max-width: 1440px;
 }
 #search_part {
   padding-bottom: 2rem;
@@ -46,13 +45,11 @@ section {
 #search_part h1{
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
+  font-weight: bold;
 }
 #search_part p{
   margin-top: 0;
   font-size: 0.9rem;
-}
-form{
-  display: inline-flex;
 }
 #marker {
   background-color: #F2F2F2;
@@ -66,8 +63,10 @@ input {
   border-bottom: 1px solid #F2F2F2;
   border-left: none;
   border-right: none;
-  padding: 0.6rem 1rem 0.6rem 1rem;
+  padding: 0.6rem 0rem 0.6rem 1rem;
   font-weight: bold;
+  font-size: 1rem;
+  font-family: 'Raleway', san sans-serif;
 }
 #backgroundtext {
   font-style: black;
@@ -80,4 +79,92 @@ button {
   color: white;
   padding: 0.6rem 1rem 0.6rem 1rem;
   cursor: pointer;
+  font-family: 'Raleway', san sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.filters{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+h2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.filters_types {
+  display: flex;
+  font-size: 1rem;
+  padding-left: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+.filters_types div {
+  position: relative;
+  align-items: center;
+  border: 2px solid #F2F2F2;
+  border-radius: 2rem;
+  cursor: pointer;
+  padding-top: 0.8rem;
+  padding-right: 1rem;
+  font-size: 0.8rem;
+  margin-right: 1.5rem;
+  height: 2rem;
+  
+}
+.filters_types i {
+  display: inline-block;
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  height: 3rem;
+  width: 2.5em;
+  color: #0065FC;
+  background-color: #DEEBFF;
+  border: 2px solid #DEEBFF;
+  box-sizing: border-box;
+  border-radius: 100%;
+  text-align: center;
+  align-items: center;
+  padding: 0.8rem 0.5rem 1rem 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.filters_types input {
+  display: none;
+}
+.filter_title {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-left:  4rem;
+  padding-top: 3rem;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.info_icon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: solid 1px #DEEBFF;
+  color: #0065FC;
+  margin-right: 1rem;
 }

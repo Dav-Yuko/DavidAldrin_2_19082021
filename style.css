@@ -176,7 +176,6 @@ h2 {
   color: #0065fc;
   margin-right: 1rem;
 }
-
 #results {
   display: flex;
   justify-content: space-between;
@@ -192,6 +191,10 @@ h2 {
   height: 650px;
   align-items: center;
   vertical-align: middle;
+}
+.titre_hebergement {
+  text-align: left;
+  padding-right: 45rem;
 }
 hebergements p{
   display: flex;

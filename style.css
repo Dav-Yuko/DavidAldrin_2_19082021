@@ -1,6 +1,6 @@
-body{
-    font-family: 'Raleway', sans-serif;
-    color: black;
+body {
+  font-family: "Raleway", sans-serif;
+  color: black;
 }
 header {
   display: flex;
@@ -17,7 +17,7 @@ nav {
   display: block;
   padding: 1rem 0;
 }
-nav ul {
+ul {
   display: flex;
   list-style-type: none;
 }
@@ -28,69 +28,69 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  color: #0065FC;
-  border-top: 3px solid #0065FC;
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
 }
 #inscription a {
-    font-weight: bold;
-    color: #0065FC;
+  font-weight: bold;
+  color: #0065fc;
 }
 section {
-    margin: auto;
-    padding: 0 2rem;
+  margin: auto;
+  padding: 0 2rem;
 }
 #search_part {
   padding-bottom: 2rem;
 }
-#search_part h1{
+#search_part h1 {
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
   font-weight: bold;
 }
-#search_part p{
+#search_part p {
   margin-top: 0;
   font-size: 0.9rem;
 }
 #marker {
-  background-color: #F2F2F2;
-  border: 1px #F2F2F2 solid;
+  background-color: #f2f2f2;
+  border: 1px #f2f2f2 solid;
   border-radius: 1rem 0 0 1rem;
   text-align: center;
   padding: 0.6rem 1rem 0.6rem 1rem;
 }
 input {
-  border-top: 1px solid #F2F2F2;
-  border-bottom: 1px solid #F2F2F2;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
   border-left: none;
   border-right: none;
   padding: 0.6rem 0rem 0.6rem 1rem;
   font-weight: bold;
   font-size: 1rem;
-  font-family: 'Raleway', san sans-serif;
+  font-family: "Raleway", san sans-serif;
 }
 #backgroundtext {
   font-style: black;
 }
 button {
-  border: 1px #0065FC solid;
+  border: 1px #0065fc solid;
   border-radius: 0 1rem 1rem 0;
   text-align: center;
-  background-color:#0065FC;
+  background-color: #0065fc;
   color: white;
   padding: 0.6rem 1rem 0.6rem 1rem;
   cursor: pointer;
-  font-family: 'Raleway', san sans-serif;
+  font-family: "Raleway", san sans-serif;
   font-weight: bold;
   font-size: 1rem;
 }
-.filters{
+.filters {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   padding-bottom: 2rem;
 }
-h2{
+h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -103,13 +103,12 @@ h2{
   padding-left: 2rem;
   flex-wrap: wrap;
   align-items: center;
-  cursor: pointer;
   font-weight: bold;
 }
 .filters_types div {
   position: relative;
   align-items: center;
-  border: 2px solid #F2F2F2;
+  border: 2px solid #f2f2f2;
   border-radius: 2rem;
   cursor: pointer;
   padding-top: 0.8rem;
@@ -117,7 +116,14 @@ h2{
   font-size: 0.8rem;
   margin-right: 1.5rem;
   height: 2rem;
-  
+}
+.filters_types :hover i {
+  background: none;
+  border-style: none;
+  color: rgb(116, 16, 16);
+  font-size: 2rem;
+  margin-left: -1rem;
+  padding-top: 0.5rem;
 }
 .filters_types i {
   display: inline-block;
@@ -126,9 +132,9 @@ h2{
   top: -2px;
   height: 3rem;
   width: 2.5em;
-  color: #0065FC;
-  background-color: #DEEBFF;
-  border: 2px solid #DEEBFF;
+  color: #0065fc;
+  background-color: #deebff;
+  border: 2px solid #deebff;
   box-sizing: border-box;
   border-radius: 100%;
   text-align: center;
@@ -145,9 +151,11 @@ h2{
   text-align: center;
   font-weight: bold;
   font-size: 1rem;
-  padding-left:  4rem;
-  padding-top: 3rem;
+  margin-left: 4rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
 }
+
 .info {
   display: flex;
   flex-direction: row;
@@ -164,7 +172,93 @@ h2{
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  border: solid 1px #DEEBFF;
-  color: #0065FC;
+  border: solid 1px #deebff;
+  color: #0065fc;
   margin-right: 1rem;
+}
+
+#results {
+  display: flex;
+  justify-content: space-between;
+}
+.hebergements {
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+  height: 650px;
+  align-items: center;
+  vertical-align: middle;
+}
+hebergements p{
+  display: flex;
+}
+.rooms {
+  flex-wrap: wrap;
+  border: 3px solid black;
+  border-radius: 1rem;
+  justify-content: space-between;
+  width: 30%;
+  height: 250px;
+}
+.picture_room1 {
+  height: 60%;
+  border-radius: 0.8rem 0.8rem 0 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+}
+.picture_room2 {
+  height: 60%;
+  border-radius: 0.8rem 0.8rem 0 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+}
+.picture_room3 {
+  height: 60%;
+  border-radius: 0.8rem 0.8rem 0 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+}
+.picture_room4 {
+  height: 60%;
+  border-radius: 0.8rem 0.8rem 0 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+}
+.picture_room5 {
+  height: 60%;
+  border-radius: 0.8rem 0.8rem 0 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+}
+.picture_room6 {
+  height: 60%;
+  border-radius: 0.8rem 0.8rem 0 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+}
+.popular {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+  height: 650px;
+}
+.blue_star {
+  color: #0065fc;
+}
+.grey_star {
+  color: #deebff;
 }

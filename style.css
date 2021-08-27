@@ -1,165 +1,131 @@
+* {
+  font-family: "Raleway", "sans-serif";
+}
 body {
-  font-family: "Raleway", sans-serif;
   color: black;
+  --bleu: #0065fc;
+  --bleu-clair: #deebff;
+  --gris: #f2f2f2;
+  margin: 0 2rem;
 }
 header {
   display: flex;
-  margin: auto;
-  padding: 0 2rem;
-  max-width: 1440px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-.headerimg {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+header img {
+  margin: 2rem 0;
+  padding-left: 0;
 }
-nav {
-  display: block;
-  padding: 1rem 0;
-}
-ul {
+nav ul {
   display: flex;
+  padding-top: 1rem;
+  vertical-align: top;
+}
+.sub-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 540px) {
+  .sub-nav {
+    order: 1;
+  }
+}
+nav li {
+  margin-right: 2rem;
   list-style-type: none;
+  flex-wrap: wrap;
 }
-nav a {
-  margin-left: 2rem;
-  color: black;
-  padding-top: 2rem;
+nav li :hover {
+  color: var(--bleu);
+  border-top: 3px solid var(--bleu);
+}
+a {
   text-decoration: none;
+  color: black;
+  padding-top: 1.8rem;
 }
-nav a:hover {
-  color: #0065fc;
-  border-top: 3px solid #0065fc;
-}
-#inscription a {
+.subscrib {
   font-weight: bold;
-  color: #0065fc;
+  color: var(--bleu);
 }
-section {
-  margin: auto;
-  padding: 0 2rem;
+h1 {
+  margin-bottom: 0;
 }
-#search_part {
-  padding-bottom: 2rem;
+.search p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
-#search_part h1 {
-  margin-bottom: 0.5rem;
-  font-size: 1.3rem;
-  font-weight: bold;
+form {
+  display: flex;
 }
-#search_part p {
-  margin-top: 0;
-  font-size: 0.9rem;
-}
-#marker {
-  background-color: #f2f2f2;
-  border: 1px #f2f2f2 solid;
-  border-radius: 1rem 0 0 1rem;
-  text-align: center;
-  padding: 0.6rem 1rem 0.6rem 1rem;
+.marker {
+  padding: 0.8rem 1rem;
+  background-color: var(--gris);
+  border: 1px solid var(--gris);
+  border-radius: 0.5rem 0 0 0.5rem;
 }
 input {
-  border-top: 1px solid #f2f2f2;
-  border-bottom: 1px solid #f2f2f2;
+  padding-left: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Raleway", san sans-serif;
+  border-top: 1px solid var(--gris);
+  border-bottom: 1px solid var(--gris);
   border-left: none;
   border-right: none;
-  padding: 0.6rem 0rem 0.6rem 1rem;
-  font-weight: bold;
-  font-size: 1rem;
-  font-family: "Raleway", san sans-serif;
-}
-#backgroundtext {
-  font-style: black;
 }
 button {
-  border: 1px #0065fc solid;
-  border-radius: 0 1rem 1rem 0;
-  text-align: center;
-  background-color: #0065fc;
-  color: white;
-  padding: 0.6rem 1rem 0.6rem 1rem;
-  cursor: pointer;
-  font-family: "Raleway", san sans-serif;
-  font-weight: bold;
+  padding: 0 1rem;
+  background-color: var(--bleu);
+  border: 1px solid var(--bleu);
+  border-radius: 0 0.5rem 0.5rem 0;
   font-size: 1rem;
+  font-family: "Raleway", san sans-serif;
+  color: white;
+  font-weight: bold;
 }
 .filters {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  padding-bottom: 2rem;
-}
-h2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   font-weight: bold;
-}
-.filters_types {
-  display: flex;
-  font-size: 1rem;
-  padding-left: 2rem;
-  flex-wrap: wrap;
   align-items: center;
-  font-weight: bold;
 }
-.filters_types div {
-  position: relative;
-  align-items: center;
-  border: 2px solid #f2f2f2;
+.filter_type :hover {
+  background-color: var(--gris);
   border-radius: 2rem;
-  cursor: pointer;
-  padding-top: 0.8rem;
-  padding-right: 1rem;
-  font-size: 0.8rem;
-  margin-right: 1.5rem;
-  height: 2rem;
+  border-color: var(--gris);
 }
-.filters_types :hover i {
-  background: none;
-  border-style: none;
-  color: rgb(116, 16, 16);
-  font-size: 2rem;
-  margin-left: -1rem;
-  padding-top: 0.5rem;
+.filter_type {
+  position: relative;
+  display: flex;
+  height: 3rem;
+  border: 2px solid var(--gris);
+  border-radius: 2rem;
+  margin-left: 1rem;
 }
-.filters_types i {
-  display: inline-block;
+.filter_type i {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: -2px;
   top: -2px;
-  height: 3rem;
-  width: 2.5em;
-  color: #0065fc;
-  background-color: #deebff;
-  border: 2px solid #deebff;
-  box-sizing: border-box;
+  border: 2px solid var(--bleu-clair);
   border-radius: 100%;
-  text-align: center;
-  align-items: center;
-  padding: 0.8rem 0.5rem 1rem 0.5rem;
-  font-weight: bold;
-  font-size: 1.2rem;
+  background-color: var(--bleu-clair);
+  width: 3rem;
+  height: 3rem;
+  color: var(--bleu);
 }
-.filters_types input {
-  display: none;
-}
-.filter_title {
-  position: relative;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1rem;
-  margin-left: 4rem;
-  cursor: pointer;
-  margin-right: 0.5rem;
-}
-
-.info {
+.filter_type div {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  padding: 0 1.2rem 0 3.5rem;
 }
+/*Code initial 1er essai à partir de là*/
 .info {
   display: flex;
   align-items: center;

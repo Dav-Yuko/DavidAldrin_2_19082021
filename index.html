@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styletraining.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <script src="https://kit.fontawesome.com/d3c7b83d91.js" crossorigin="anonymous"></script>
     <title>reservia</title>
@@ -11,54 +11,46 @@
 
 <body>
     <header>
-        <div class="headerimg">
-            <img src="images\logo\reservia.svg" alt="reservia" />
-        </div>
-        <nav class="headernav">
+        <img src="./images/logo/Reservia.svg" alt="logo">
+        <nav>
             <ul>
-                <li><a href="#">Hébergements</a></li>
-                <li><a href="#">Activités</a></li>
-                <li id="inscription"><a href="#">S'inscrire</a></li>
+                <div class="sub-nav">
+                    <li><a href="#">Hébergement</a></li>
+                    <li><a href="#">Activités</a></li>
+                </div>
+                <li><a class="subscrib" href="#">Inscription</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <div id="search_part">
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
-            <form method="post" action="">
-                <span id="marker">
-                    <i class="fas fa-map-marker-alt"></i>
-                </span>
-                <input type="search" value="Marseille, France" />
-                <button>
-                    <span class="search_button">Rechercher</span>
-                </button>
-            </form>
-        </div>
+    <section class="search">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+        <form method="post" action="">
+            <span class="marker">
+                <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <input type="search" placeholder="Marseille, France" />
+            <button>
+                <span class="search_button">Rechercher</span>
+            </button>
+        </form>
         <div class="filters">
             <h2>Filtres</h2>
-            <div class="filters_types">
-                <div>
-                    <i class="fas fa-money-bill-wave"></i>
-                    <input type="checkbox" name="type-hebergement" id="economic" value="economic">
-                    <label for="economic" class="filter_title">Économique</label>
-                </div>
-                <div>
-                    <i class="fas fa-child"></i>
-                    <input type="checkbox" name="type-hebergement" id="familial" value="familial">
-                    <label for="familial" class="filter_title">Familial</label>
-                </div>
-                <div>
-                    <i class="fas fa-heart"></i>
-                    <input type="checkbox" name="type-hebergement" id="romantique" value="romantique">
-                    <label for="romantique" class="filter_title">Romantique</label>
-                </div>
-                <div>
-                    <i class="fas fa-dog"></i>
-                    <input type="checkbox" name="type-hebergement" id="pet" value="pet">
-                    <label for="pet" class="filter_title">Animaux autorisés</label>
-                </div>
+            <div class="filter_type">
+                <i class="fas fa-money-bill-wave"></i>
+                <div>Economique</div>
+            </div>
+            <div class="filter_type">
+                <i class="fas fa-child"></i>
+                <div>Familial</div>
+            </div>
+            <div class="filter_type">
+                <i class="fas fa-heart"></i>
+                <div>Romantique</div>
+            </div>
+            <div class="filter_type">
+                <i class="fas fa-dog"></i>
+                <div>Animaux autorisés</div>
             </div>
         </div>
         <p class="info">
@@ -165,8 +157,9 @@
                     </div>
                 </a>
             </div>
+            <p><b>Afficher plus</b></p>
         </div>
-        <p><b>Afficher plus</b></p>
+        
 
         <aside class="popular">
             <h2>Les plus populaires</h2>

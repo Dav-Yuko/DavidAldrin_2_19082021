@@ -10,7 +10,7 @@ body {
   --gris: #f2f2f2;
   --gris-foncé: #e0e0e0;
   margin: auto;
-  max-width: 1400px;
+  max-width: 1440px;
 }
 header {
   position: relative;
@@ -34,9 +34,23 @@ header nav {
 .sub-nav {
   display: flex;
 }
+nav a {
+  flex-wrap: wrap;
+  margin: 0em 1rem 0 1rem;
+  list-style-type: none;
+  padding-top: 2rem;
+  border-top: 2px solid transparent;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.sub-nav {
+  display: flex;
+}
 nav a:hover {
   color: var(--bleu);
-  border-top: 3px solid var(--bleu);
+  border-top: 2px solid var(--bleu);
 }
 .subscrib {
   color: var(--bleu);
@@ -63,17 +77,7 @@ nav a:hover {
     color: red;
   }
 }
-nav a {
-  flex-wrap: wrap;
-  margin: 0em 1rem 0 1rem;
-  list-style-type: none;
-  padding-top: 2rem;
-  border-top: 3px solid transparent;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
+
 h1 {
   margin-bottom: 0;
 }
@@ -112,6 +116,10 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
+button:hover {
+  box-shadow: 2px 2px 4px var(--bleu);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
 .filters {
   display: flex;
   flex-wrap: wrap;
@@ -121,7 +129,6 @@ button {
   align-items: center;
 }
 .filter_type:hover {
-  /*background-color: rgba(222, 235, 255, 0.267);*/
   box-shadow: 1px 1px 4px var(--gris-foncé);
   border-radius: 2rem;
   color: var(--bleu);
@@ -173,23 +180,24 @@ button {
 .results {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 .hostings {
-  flex: 2;
+  flex: 65%;
   justify-content: space-around;
   background-color: var(--gris);
   border-radius: 1rem;
   margin-right: 2rem;
   padding: 0 1rem;
 }
+.hostings h2 {
+  display: block;
+  margin: 2rem auto 1rem 1rem;
+}
 .hostings__rooms {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-.hostings h2 {
-  display: block;
-  margin: 2rem auto 1rem 1rem;
 }
 .room {
   border: 5px solid white;
@@ -197,11 +205,15 @@ button {
   justify-content: space-around;
   margin: 0 0 2rem 0;
   min-width: 17rem;
-  min-height: 13rem;
+  min-height: 13.5rem;
   background-color: white;
-  box-shadow:  0px 2px 12px 4px var(--gris-foncé);
+  box-shadow: 0px 2px 12px 4px var(--gris-foncé);
 }
-.picture_room1 {
+.room:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 4px gray;
+}
+.picture-room1 {
   height: 60%;
   width: auto;
   border-radius: 1rem 1rem 0 0;
@@ -209,35 +221,35 @@ button {
   background-position: center;
   background-image: url("images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
-.picture_room2 {
+.picture-room2 {
   height: 60%;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
   background-position: center;
   background-image: url("images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
 }
-.picture_room3 {
+.picture-room3 {
   height: 60%;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
   background-position: center;
   background-image: url("images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg");
 }
-.picture_room4 {
+.picture-room4 {
   height: 60%;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
   background-position: center;
   background-image: url("images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 }
-.picture_room5 {
+.picture-room5 {
   height: 60%;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
   background-position: center;
   background-image: url("images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
 }
-.picture_room6 {
+.picture-room6 {
   height: 60%;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
@@ -250,24 +262,91 @@ button {
 .grey_star {
   color: #e0e0e0;
 }
-.describ {
+.room__describ {
   display: block;
   padding: 0 0;
 }
-.describ h3 {
+.room__describ h3 {
   display: block;
   margin: 0.5rem auto 2px 0.5rem;
 }
-.describ p {
-  margin: 2px 0;
+.room__describ p {
+  margin: 0.3rem 0;
 }
 .hostings p {
   padding-left: 0.5rem;
 }
+.plus {
+  margin: 1rem 0 0 1.5rem;
+}
 .popular {
-  flex: 1;
+  width: 32%;
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: var(--gris);
   border-radius: 1rem;
+}
+.popular__title {
+  display: flex;
+  justify-content: space-between;
+}
+.popular h2 {
+  margin: 2rem auto 1rem 2rem;
+}
+.tendance {
+  font-size: 1.5rem;
+  margin: 2rem 2rem 1rem auto;
+}
+.popular__rooms {
+  flex-wrap: wrap;
+}
+.popular__room a:hover{
+  transform: scale(1.02);
+  box-shadow: 2px 2px 4px gray;
+}
+.popular__room a {
+  position: relative;
+  display: flex;
+  border: 5px solid white;
+  border-radius: 1rem;
+  margin: 0 2rem 2rem 2rem;
+  min-width: 20rem;
+  min-height: 9rem;
+  background-color: white;
+  box-shadow: 0px 2px 12px 4px var(--gris-foncé);
+}
+
+.popular__room__describ h3 {
+  margin: 0.5rem 2rem 2px 1rem;
+}
+.popular__room__describ p {
+  margin: 0.3rem 1rem;
+}
+.stars {
+  position: absolute;
+  bottom: 0;
+}
+.picture-room7 {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem 0 0 1rem;
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+}
+.picture-room8 {
+  width: 10rem;
+  height: 9rem;
+  border-radius: 1rem 0 0 1rem;
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg");
+}
+.picture-room9 {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem 0 0 1rem;
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
 }

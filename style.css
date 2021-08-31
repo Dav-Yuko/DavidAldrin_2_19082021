@@ -60,63 +60,6 @@ nav a:hover {
   font-weight: bold;
 }
 
-/*:::::::::::::::::::::::::::::  media tablette  :::::::::::::::::::::::::::::*/
-@media (max-width: 1280px) {
- 
-  .filters h2 {
-    display: block;
-  }
-  .results {
-    flex-direction: column;
-  }
-  .hostings {
-    order: 1;
-  }
-  .popular {
-    order: 0;
-    flex-direction: row;
-  }
-}
-
-/*:::::::::::::::::::::::::::::  media query Iphone  :::::::::::::::::::::::::::::*/
-@media (max-width: 510px) {
-  .sub-nav {
-    order: 1;
-    flex-basis: 100%;
-    border-top: none;
-    border-bottom: 3px solid #f2f2f2;
-    width: 50%;
-  }
-  .sub-nav a:hover {
-    border-top: none;
-    border-bottom: 3px solid var(--bleu);
-  }
-  .subscrib {
-    order: 0;
-    align-items: right;
-    text-align: right;
-  }
-  .subscrib:hover {
-    color: red;
-    border-top: 2px solid transparent;
-  }
-  #filters__title {
-    display: block;
-  }
-  .filters {
-  display: block;
-
-    flex-direction: column;
-    padding-left: 0;
-  }
-  .filter__type {
-    margin-left: 0;
-  }
-  footer {
-    flex-direction: column;
-  }
-}
-
 
 /*:::::::::::::::::::::::::::::  input+filtres critères de recherche  :::::::::::::::::::::::::::::*/
 h1 {
@@ -504,4 +447,62 @@ footer a {
 }
 .about_join_help a:hover {
   color: var(--bleu);
+}
+
+
+/*:::::::::::::::::::::::::::::  media tablette  :::::::::::::::::::::::::::::*/
+@media (max-width: 1280px) {
+  .results {
+    flex-direction: column;
+  }
+  .hostings {
+    order: 1;
+    background: none;
+  }
+  .popular {
+    order: 0;
+    flex-direction: row;
+  }
+}
+
+/*:::::::::::::::::::::::::::::  media query Iphone  :::::::::::::::::::::::::::::*/
+@media (max-width: 510px) {
+  .sub-nav {
+    order: 1;
+    flex-basis: 100%;
+    border-top: none;
+    border-bottom: 3px solid #f2f2f2;
+    width: 50%;
+  }
+  .sub-nav a:hover {
+    border-top: none;
+    border-bottom: 3px solid var(--bleu);
+  }
+  .subscrib {
+    order: 0;
+    align-items: right;
+    text-align: right;
+  }
+  .subscrib:hover {
+    color: red;
+    border-top: 2px solid transparent;
+  }
+  #filters__title {
+    display: block;
+  }
+  .filters {
+  display: block;
+
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .filter__type {
+    margin-left: 0;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .hostings {
+    background: none;
+  }
 }

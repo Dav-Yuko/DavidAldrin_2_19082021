@@ -61,7 +61,25 @@ nav a:hover {
 }
 
 /*:::::::::::::::::::::::::::::  media tablette  :::::::::::::::::::::::::::::*/
-@media (max-width: 600px) {
+@media (max-width: 1280px) {
+ 
+  .filters h2 {
+    display: block;
+  }
+  .results {
+    flex-direction: column;
+  }
+  .hostings {
+    order: 1;
+  }
+  .popular {
+    order: 0;
+    flex-direction: row;
+  }
+}
+
+/*:::::::::::::::::::::::::::::  media query Iphone  :::::::::::::::::::::::::::::*/
+@media (max-width: 510px) {
   .sub-nav {
     order: 1;
     flex-basis: 100%;
@@ -82,14 +100,25 @@ nav a:hover {
     color: red;
     border-top: 2px solid transparent;
   }
+  #filters__title {
+    display: block;
+  }
+  .filters {
+  display: block;
+
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .filter__type {
+    margin-left: 0;
+  }
+  footer {
+    flex-direction: column;
+  }
 }
 
-/*:::::::::::::::::::::::::::::  media query Iphone  :::::::::::::::::::::::::::::*/
-@media (max-width: 600px) {
-}
 
-
-/*:::::::::::::::::::::::::::::  input + filtres critères de recherche  :::::::::::::::::::::::::::::*/
+/*:::::::::::::::::::::::::::::  input+filtres critères de recherche  :::::::::::::::::::::::::::::*/
 h1 {
   margin-bottom: 0;
 }
@@ -140,10 +169,8 @@ button:hover {
   font-weight: bold;
   align-items: center;
 }
-.filter_type:hover {
-  box-shadow: 1px 1px 4px var(--gris-fonce);
-  border-radius: 2rem;
-  color: var(--bleu);
+.filters h2{
+  margin-top: 0.5rem;
 }
 .filter_type {
   position: relative;
@@ -152,7 +179,13 @@ button:hover {
   border: 2px solid #e0e0e0;
   border-radius: 2rem;
   margin-left: 1rem;
+  margin-bottom: 0.5rem;
   cursor: pointer;
+}
+.filter_type:hover {
+  box-shadow: 1px 1px 4px var(--gris-fonce);
+  border-radius: 2rem;
+  color: var(--bleu);
 }
 .filter_type i {
   position: absolute;
@@ -194,14 +227,14 @@ button:hover {
 .results {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 2rem;
 }
 .hostings {
-  flex: 65%;
+  flex-basis: 65%;
   justify-content: space-around;
   background-color: var(--gris);
   border-radius: 1rem;
-  margin-right: 2rem;
   padding: 0 1rem;
   margin-bottom: 2rem;
 }
@@ -300,7 +333,7 @@ button:hover {
 
 /*:::::::::::::::::::::::::::::  hébergements populaires  :::::::::::::::::::::::::::::*/
 .popular {
-  width: 32%;
+  flex-basis: 32%;
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: var(--gris);
@@ -373,9 +406,7 @@ button:hover {
 }
 
 /*:::::::::::::::::::::::::::::  activités  :::::::::::::::::::::::::::::*/
-.activity {
-  margin-bottom: 4rem;
-}
+
 .activity__places {
   display: flex;
   flex-wrap: wrap;
@@ -387,6 +418,7 @@ button:hover {
   box-shadow: 2px 2px 12px 1px var(--gris-fonce);
   transition: transform 1s;
   cursor: pointer;
+  margin-bottom: 2rem;
 }
 .activity__place:hover {
   transform: scale(1.08);

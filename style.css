@@ -16,32 +16,23 @@ body {
   margin: 0 2rem;
 }
 header {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
   margin-bottom: 2rem;
 }
-header img {
-  position: absolute;
-  left: 0rem;
-  top: 1.3rem;
-  padding-left: 0;
+header nav img {
+  margin: 1rem auto 2rem 0;
 }
 header nav {
   display: flex;
+  justify-content: flex-between;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
 .sub-nav {
   display: flex;
 }
 nav a {
   flex-wrap: wrap;
-  margin: 0em 1rem 0 1rem;
-  list-style-type: none;
-  padding-top: 2rem;
+  text-align: center;
+  padding: 2rem 0 0 1rem;
   border-top: 2px solid transparent;
 }
 a {
@@ -50,6 +41,11 @@ a {
 }
 .sub-nav {
   display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.sub-nav a{
+text-align: center;
 }
 nav a:hover {
   color: var(--bleu);
@@ -205,46 +201,28 @@ button:hover {
   transform: scale(1.02);
   box-shadow: 2px 2px 4px gray;
 }
-.picture-room1 {
+.picture-room {
   height: 60%;
   border-radius: 0.8rem 0.8rem 0 0;
   background-size: cover;
   background-position: center;
+}
+.picture1 {
   background-image: url("images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
-.picture-room2 {
-  height: 60%;
-  border-radius: 0.8rem 0.8rem 0 0;
-  background-size: cover;
-  background-position: center;
+.picture2 {
   background-image: url("images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
 }
-.picture-room3 {
-  height: 60%;
-  border-radius: 0.8rem 0.8rem 0 0;
-  background-size: cover;
-  background-position: center;
+.picture3 {
   background-image: url("images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg");
 }
-.picture-room4 {
-  height: 60%;
-  border-radius: 0.8rem 0.8rem 0 0;
-  background-size: cover;
-  background-position: center;
+.picture4 {
   background-image: url("images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 }
-.picture-room5 {
-  height: 60%;
-  border-radius: 0.8rem 0.8rem 0 0;
-  background-size: cover;
-  background-position: center;
+.picture5 {
   background-image: url("images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
 }
-.picture-room6 {
-  height: 60%;
-  border-radius: 0.8rem 0.8rem 0 0;
-  background-size: cover;
-  background-position: center;
+.picture6 {
   background-image: url("images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
 .blue_star {
@@ -323,28 +301,19 @@ button:hover {
   position: absolute;
   bottom: 0;
 }
-.picture-room7 {
+.picture-popular {
   width: 10rem;
-  height: 9rem;
   border-radius: 0.8rem 0 0 0.8rem;
   background-size: cover;
   background-position: center;
+}
+.pop-picture1 {
   background-image: url("images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
 }
-.picture-room8 {
-  width: 10rem;
-  height: 9rem;
-  border-radius: 0.8rem 0 0 0.8rem;
-  background-size: cover;
-  background-position: center;
+.pop-picture2 {
   background-image: url("images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg");
 }
-.picture-room9 {
-  width: 10rem;
-  height: 9rem;
-  border-radius: 0.8rem 0 0 0.8rem;
-  background-size: cover;
-  background-position: center;
+.pop-picture3 {
   background-image: url("images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
 }
 
@@ -352,6 +321,7 @@ button:hover {
 
 .activity__places {
   display: flex;
+  margin: auto;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -370,55 +340,64 @@ button:hover {
   margin: 1rem auto 0 1rem;
   padding-bottom: 1rem;
 }
-.place1__picture {
+.place1 {
   min-width: 20rem;
-  height: 28rem;
+  height: 26rem;
   border-radius: 1rem 1rem 0 0;
   background-size: 44rem;
-  background-position: center;
+  background-position: top;
+}
+.place__picture1 {
   background-image: url("images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
 }
-.place2__picture {
+.place2 {
   min-width: 20rem;
-  height: 15rem;
-  margin-bottom: 1rem;
+  height: 13rem;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
-  background-position: top -5rem center;
+  background-position: top -6rem center;
+}
+.place__picture2 {
   background-image: url("images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 }
-.place3__picture {
+.place3 {
   min-width: 20rem;
-  height: 7rem;
-  margin-top: 2.5rem;
+  height: 7.5rem;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
-  background-position: top -1.5rem center;
+  background-position: top -1rem center;
+}
+.place__picture3 {
   background-image: url("images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
 }
-.place4__picture {
+.place4 {
   min-width: 20rem;
-  height: 28rem;
+  height: 26rem;
   border-radius: 1rem 1rem 0 0;
   background-size: 44rem;
   background-position: top;
+}
+.place__picture4 {
   background-image: url("images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
 }
-.place5__picture {
+.place5 {
   min-width: 20rem;
-  height: 10rem;
+  height: 9.5rem;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
   background-position: top;
+}
+.place__picture5 {
   background-image: url("images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg");
 }
-.place6__picture {
+.place6 {
   min-width: 20rem;
-  height: 12rem;
-  margin-top: 2.5rem;
+  height: 11rem;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
   background-position: top;
+}
+.place__picture6 {
   background-image: url("images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 }
 
@@ -427,7 +406,8 @@ footer {
   display: flex;
   justify-content: space-between;
   background-color: var(--gris);
-  margin: 2rem 0;
+  margin-top: 2rem;
+  padding: 1rem 2rem 0 2rem;
 }
 footer h3 {
   padding-left: 2.5rem;
@@ -451,7 +431,10 @@ footer a {
 
 
 /*:::::::::::::::::::::::::::::  media tablette  :::::::::::::::::::::::::::::*/
-@media (max-width: 1280px) {
+@media (max-width: 1380px) {
+  body {
+    max-width: 1000px;
+  }
   .results {
     flex-direction: column;
   }
@@ -463,10 +446,15 @@ footer a {
     order: 0;
     flex-direction: row;
   }
+  .activity h2 {
+    text-align: center;
+  }
+  .activity__places {
+    justify-content: space-around;
+  }
 }
-
 /*:::::::::::::::::::::::::::::  media query Iphone  :::::::::::::::::::::::::::::*/
-@media (max-width: 510px) {
+@media (max-width: 730px) {
   .sub-nav {
     order: 1;
     flex-basis: 100%;
@@ -498,6 +486,35 @@ footer a {
   }
   .filter__type {
     margin-left: 0;
+  }
+  .room {
+    border: 5px solid white;
+    border-radius: 1rem;
+    justify-content: space-around;
+    min-width: 22rem;
+    min-height: 13rem;
+    background-color: white;
+    box-shadow: 0px 2px 12px 4px var(--gris-fonce);
+    transition: transform 0.5s;
+  }
+  .activity__places {
+    justify-content: center;
+  }
+  .activity__place {
+    border: 5px solid white;
+    border-radius: 1rem;
+    justify-content: space-around;
+    min-width: 22rem;
+    min-height: 13rem;
+    background-color: white;
+    box-shadow: 0px 2px 12px 4px var(--gris-fonce);
+    transition: transform 0.5s;
+  }
+  .placelikeroom {
+    height: 60%;
+    border-radius: 0.8rem 0.8rem 0 0;
+    background-size: cover;
+    background-position: center;
   }
   footer {
     flex-direction: column;

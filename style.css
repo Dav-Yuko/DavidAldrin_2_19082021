@@ -9,7 +9,7 @@ body {
   --bleu-clair: #deebff;
   --gris: #f2f2f2;
   --gris-fonce: #e0e0e0;
-  margin: auto;
+  margin: 0 auto;
   max-width: 1440px;
 }
 .centrage {
@@ -95,6 +95,9 @@ button {
   color: white;
   font-weight: bold;
   cursor: pointer;
+}
+.loupe {
+display: none;
 }
 button:hover {
   box-shadow: 2px 2px 2px gray;
@@ -605,6 +608,12 @@ footer a {
   p {
     font-size: 0.8rem;
   }
+  .loupe {
+    display: inline-block;
+    }
+    .search_button {
+      display: none;
+    }
   .hostings {
     background: none;
   }

@@ -57,7 +57,7 @@ nav a:hover {
   font-weight: bold;
 }
 
-/*:::::::::::::::::::::::::::::  input+filtres critères de recherche  :::::::::::::::::::::::::::::*/
+/*  input+filtres critères de recherche  */
 h1 {
   margin-bottom: 0;
 }
@@ -152,7 +152,6 @@ button:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 2rem;
-
 }
 .results-info {
   display: flex;
@@ -453,6 +452,22 @@ footer a {
   .room {
     min-width: 18rem;
   }
+  .popular__rooms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 1rem 1.5rem 1rem;
+  }
+  .popular__room {
+    flex-basis: 30%;
+    min-width: 18rem;
+  }
+  .popular__room a {
+    margin: 0;
+  }
+  .picture-popular {
+    height: 13rem;
+  }
   .activity {
     margin: auto 2rem;
   }
@@ -516,6 +531,18 @@ footer a {
   .room {
     flex-basis: 45%;
   }
+  .popular__rooms {
+    flex-direction: column;
+    padding: 0 2rem 2rem 2rem;
+  }
+  .popular__room {
+    margin: 0 0;
+    padding-bottom: 1rem;
+    flex-basis: 100%;
+  }
+  .picture-popular {
+    height: 10rem;
+  }
   .activity__places {
     justify-content: space-between;
   }
@@ -523,7 +550,7 @@ footer a {
     flex-basis: 48%;
   }
   .activity__place,
-  activity__group__place {
+  .activity__group__place {
     min-width: 18rem;
   }
   .activities__group {
@@ -531,7 +558,8 @@ footer a {
   }
   .media-order4 {
     order: -1;
-  }.media-order1 {
+  }
+  .media-order1 {
     order: -1;
   }
 }
@@ -582,13 +610,16 @@ footer a {
   }
   .room {
     margin: 0 0 2rem 0;
-    flex-basis: 90%;
+   flex-basis: 100%;
   }
   form {
     justify-content: center;
   }
   .popular h2 {
     margin-left: 1rem;
+  }
+  .activity {
+    margin: auto 1rem;
   }
   .activity__places {
     flex-basis: 100%;
@@ -623,9 +654,6 @@ footer a {
   .hostings {
     background: none;
   }
-  .popular__room a {
-    margin: 0 1rem 2rem 1rem;
-  }
   .room {
     border: 5px solid white;
     border-radius: 1rem;
@@ -639,6 +667,13 @@ footer a {
   .popular {
     border-radius: 0;
   }
+  .popular__rooms {
+    padding: 0 1rem 1rem 1rem;
+  }
+  .picture-popular {
+    height: 8rem;
+  }
+
   footer {
     flex-direction: column;
   }

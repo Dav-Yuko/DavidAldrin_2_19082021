@@ -535,8 +535,8 @@ footer a {
     order: -1;
   }
 }
-/*  media query tablette -700px à Iphone   */
-@media (max-width: 700px) {
+/*  media query tablette -720px à Iphone   */
+@media (max-width: 720px) {
   body {
     min-width: 375px;
   }
